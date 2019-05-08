@@ -30,6 +30,7 @@ namespace PieShop
 
             //whenever somebody request a Ipierepo it will return a mockpierepo
             services.AddTransient<IPieRepository, PieRepository>();
+            services.AddTransient<IFeedbackRepository, FeedbackRepository>();
             
             services.AddMvc();
         }
